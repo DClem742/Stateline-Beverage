@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stateline Beverage - Your Premium Liquor Store</title>
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
+   <div class="content">
     <header>
         <h1>Stateline Beverage</h1>
         <nav>
@@ -20,7 +24,20 @@
         </nav>
     </header>
     <main>
-        <section id="home">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                background-image: url('imgs/Stateline_Beverage_inside.jpeg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                }
+        </style>
+        
+        <!-- <section id="home">
             <h2>Welcome to Stateline Beverage</h2>
             <p>Your one-stop shop for premium liquors, wines, and craft beers.</p>
         </section>
@@ -49,13 +66,14 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Get in touch with us for inquiries or special orders.</p>
-        </section>
+        </section> -->
     </main>
-
-    <footer>
-        <p>© 2023 Stateline Beverage. All rights reserved.</p>
-        <p>Drink responsibly. Must be 21 or older to purchase alcohol.</p>
-    </footer>
+</div>
+<footer>
+    <p>© 2023 Stateline Beverage. All rights reserved.</p>
+    <p>Drink responsibly. Must be 21 or older to purchase alcohol.</p>
+</footer>
+   
 </body>
 
 <script src="scripts.js"></script>
