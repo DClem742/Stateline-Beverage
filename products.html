@@ -44,19 +44,23 @@
             
             <p>Visit our store to explore our full range and find your perfect drink!</p>
         </section>
-
         <section id="store-images">
             <h3>Our Store</h3>
             <div class="image-gallery">
-                <img src="imgs/inside_store1.jpeg" alt="Inside Stateline Beverage Store">
-                <img src="imgs/inside_store3.jpeg" alt="">
-                <img src="imgs/inside_store4.jpeg" alt="">
-                <img src="imgs/inside_store5.jpeg" alt="">
-                <img src="imgs/inside_store6.jpeg" alt="">
-                <img src="imgs/inside_store7.jpeg" alt="">
+                <img src="imgs/inside_store1.jpeg" alt="Inside Stateline Beverage Store" onclick="openLightbox(this.src)">
+                <img src="imgs/inside_store3.jpeg" alt="Store Interior" onclick="openLightbox(this.src)">
+                <img src="imgs/inside_store4.jpeg" alt="Store Display" onclick="openLightbox(this.src)">
+                <img src="imgs/inside_store5.jpeg" alt="Product Selection" onclick="openLightbox(this.src)">
+                <img src="imgs/inside_store6.jpeg" alt="Store Shelves" onclick="openLightbox(this.src)">
+                <img src="imgs/inside_store7.jpeg" alt="Store Layout" onclick="openLightbox(this.src)">
             </div>
         </section>
     </main>
+
+    <!-- Add this div at the end of the body -->
+    <div class="lightbox" onclick="closeLightbox()">
+        <img src="" alt="Enlarged store image">
+    </div>
 
     <footer>
         <p>© 2024 Stateline Beverage. All rights reserved.</p>
@@ -65,3 +69,17 @@
     </footer>
 </body>
 </html>
+
+<script>
+function openLightbox(imgSrc) {
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    lightboxImg.src = imgSrc;
+    lightbox.classList.add('active');
+}
+
+function closeLightbox() {
+    const lightbox = document.querySelector('.lightbox');
+    lightbox.classList.remove('active');
+}
+</script>
