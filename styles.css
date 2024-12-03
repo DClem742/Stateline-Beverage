@@ -410,4 +410,19 @@ footer p {
     header nav ul li {
         margin: 10px 0;
     }
+
+    #contact-form {
+        padding: 20px 20px;
+        margin: 0 20px;
+    }
+
+    #contact-form label {
+        margin-left: 0;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%;
+        max-width: none;
+    }
 }
