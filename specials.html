@@ -9,6 +9,11 @@
 <body>
     <header>
         <h1>Stateline Beverage</h1>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -77,5 +82,21 @@
         <p>Drink responsibly. Must be 21 or older to purchase alcohol.</p>
         <p class="creator-credit">Created by DC Isenberg</p>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('header nav ul');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    
+        // Close menu when a link is clicked
+        document.querySelectorAll('header nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+    
 </body>
 </html>
