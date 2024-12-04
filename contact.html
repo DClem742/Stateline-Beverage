@@ -38,7 +38,7 @@
 
         <section id="contact-form">
             <h3>Send Us a Message</h3>
-            <form name="contact" method="POST" data-netlify="true" id="contactForm">
+            <form action="https://formsubmit.co/dclem742@gmail.com" method="POST" id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -51,7 +51,8 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <input type="hidden" name="_captcha" value="true">
 
                 <button type="submit">Send Message</button>
             </form>
@@ -59,13 +60,8 @@
 
         <script>
             document.getElementById('contactForm').addEventListener('submit', function(e) {
-                // Prevent default form submission
                 e.preventDefault();
-        
-                // Show alert
                 alert('Thank you! Your message has been received. We will get back to you soon.');
-        
-                // Submit the form
                 this.submit();
             });
         </script>
