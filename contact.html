@@ -58,6 +58,19 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                // Prevent default form submission
+                e.preventDefault();
+        
+                // Show alert
+                alert('Thank you! Your message has been received. We will get back to you soon.');
+        
+                // Submit the form
+                this.submit();
+            });
+        </script>
         
         <section id="map">
             <h3>Find Us</h3>
